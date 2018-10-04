@@ -522,7 +522,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.explanations:
-                        Toast.makeText(getApplicationContext(), "expl", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Openning explanations website", Toast.LENGTH_SHORT).show();
+                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                        startActivity(browserIntent);
                         //Do something
                         return true;
 
