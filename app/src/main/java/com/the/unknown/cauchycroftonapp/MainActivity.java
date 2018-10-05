@@ -3,7 +3,6 @@ package com.the.unknown.cauchycroftonapp;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -11,11 +10,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -190,7 +187,6 @@ public class MainActivity extends AppCompatActivity {
                 double theta = j*angle;
                 int a = (int) (d/Math.cos(theta));
                 int h = (int) (Math.tan(theta)*mBmpWidth);
-                Log.i("info", a+" "+h);
                 if(a>0){
                     int yStart = d/2-a;
                     int yEnd = yStart-h;
@@ -220,8 +216,6 @@ public class MainActivity extends AppCompatActivity {
         for (Point aMDotsList : mDotsList) {
             point = aMDotsList;
             drawDot(point);
-            Log.i("size", point.mx + " " + point.my);
-
         }
     }
     private void drawDot(Point point){
@@ -294,7 +288,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-            Log.i("size", " "+mDotsList.size());
             drawDots();
         }
     }
@@ -454,9 +447,6 @@ public class MainActivity extends AppCompatActivity {
 
         mImageView.setBackgroundColor(Color.TRANSPARENT);
         drawAll();
-
-        Log.i("tag", mPicture.getHeight()+" "+mPicture.getWidth());
-
 
     }
 
