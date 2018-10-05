@@ -3,6 +3,7 @@ package com.the.unknown.cauchycroftonapp;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -10,6 +11,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -521,17 +523,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.deep_explanations:
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/project/Cauchy-Crofton_Formula.pdf")));
+                        return true;
                     case R.id.explanations:
-                        Toast.makeText(getApplicationContext(), "Openning explanations website", Toast.LENGTH_SHORT).show();
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-                        startActivity(browserIntent);
-                        //Do something
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonApp/website/quick_expl.html")));
                         return true;
-
-                    case R.id.about_us:
-                        // do something
+                    case R.id.about_me:
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonApp/website/about.html")));
                         return true;
-
                     default:
                         return true;
 

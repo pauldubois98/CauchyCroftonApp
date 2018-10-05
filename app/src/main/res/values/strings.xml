@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Cauchy Crofton</string>
+    <string name="alert_message">Part of our 2nd year at UCL</string>
+    <string name="alert_title">Cauchy-Crofton App</string>
+    <string name="alert_positive_bt">OK</string>
+    <string name="quick_explanations">Quick Explanations</string>
+    <string name="mathematical_explanations">Mathematical Explanations</string>
+    <string name="about_me">About Me</string>
+    <string name="image_bt_txt">Image</string>
+    <string name="image_swich_txt">Image</string>
+    <string name="black_bg_switch_txt">Black bg</string>
+    <string name="curve_switch_txt">Curve</string>
+    <string name="width_label_txt">width:</string>
+    <string name="curve_point_bt_txt">Curve point</string>
+    <string name="tol_label_txt">tol.:</string>
+    <string name="lines_label_txt">Lines</string>
+    <string name="number_label_txt">Number:</string>
+    <string name="angle_label_txt">Angle:</string>
+    <string name="dots_switch_txt">Dots</string>
+    <string name="add_radio_txt">Add</string>
+    <string name="none_radio_txt">None</string>
+    <string name="suppr_radio_txt">Suppr</string>
+    <string name="ref_switch_txt">Ref</string>
+    <string name="start_ref_bt_txt">start</string>
+    <string name="end_ref_bt_txt">end</string>
+    <string name="ref_lenght_label_txt">Ref lenght</string>
+    <string name="unit_text_edit_hint">unit</string>
 </resources>
