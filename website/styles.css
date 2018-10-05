@@ -1,9 +1,8 @@
-@media screen and (min-width: 640px) {
-    body{
-        max-width: 30em;
-        margin: auto;
-    }
+body{
+    max-width: 80%;
+    margin: auto;
 }
+
 
 
 h1{
