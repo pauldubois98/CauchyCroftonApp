@@ -1,0 +1,1 @@
+# Cauchy Crofton AppAn Android app that enables you to use the Cauchy-Crofton Formulae to calculate the length of curves on an image from your smartphone.![screenshot](/icones/baniere.png)
