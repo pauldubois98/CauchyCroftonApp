@@ -28,7 +28,6 @@ import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -513,11 +512,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.deep_explanations:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/project/Cauchy-Crofton_Formula.pdf")));
+                    case R.id.math_paper:
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/project/paper/Cauchy-Crofton_Formula.pdf")));
                         return true;
-                    case R.id.explanations:
+                    case R.id.maths_expl:
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonApp/website/quick_expl.html")));
+                        return true;
+                    case R.id.app_expl:
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/media/expl.pdf")));
                         return true;
                     case R.id.about_me:
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonApp/website/about.html")));

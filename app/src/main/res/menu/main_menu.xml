@@ -3,14 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/deep_explanations"
+        android:id="@+id/math_paper"
         app:showAsAction="never"
         android:title="@string/mathematical_explanations"
         />
     <item
-    android:id="@+id/explanations"
-    app:showAsAction="never"
-    android:title="@string/quick_explanations"
+        android:id="@+id/maths_expl"
+        app:showAsAction="never"
+        android:title="@string/quick_explanations"
+        />
+    <item
+        android:id="@+id/app_expl"
+        app:showAsAction="never"
+        android:title="@string/app_expl"
         />
     <item android:id="@+id/about_me"
         app:showAsAction="never"

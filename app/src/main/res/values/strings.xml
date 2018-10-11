@@ -3,8 +3,9 @@
     <string name="alert_message">Part of our 2nd year at UCL</string>
     <string name="alert_title">Cauchy-Crofton App</string>
     <string name="alert_positive_bt">OK</string>
-    <string name="quick_explanations">Quick Explanations</string>
-    <string name="mathematical_explanations">Mathematical Explanations</string>
+    <string name="quick_explanations">Why does it work?</string>
+    <string name="app_expl">How does it work?</string>
+    <string name="mathematical_explanations">Mathematical Paper</string>
     <string name="about_me">About...</string>
     <string name="image_bt_txt">Image</string>
     <string name="image_swich_txt">Image</string>
