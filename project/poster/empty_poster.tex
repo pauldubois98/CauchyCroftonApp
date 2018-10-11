@@ -1,0 +1,77 @@
+\documentclass[a0]{a0poster}
+
+%for math
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+%for images
+\usepackage{graphicx}
+%for color
+\usepackage{xcolor}
+%for title
+\title{}
+\author{Paul \textsc{Dubois}}
+\date{1st January 1970}
+
+
+
+
+% These colours are tried and tested for titles and headers. Don't
+% over use color!
+\usepackage{color}
+\definecolor{DarkBlue}{rgb}{0.1,0.1,0.5}
+\definecolor{Red}{rgb}{0.9,0.0,0.1}
+\definecolor{headingcol}{rgb}{0.5,0.7,1}
+%\definecolor{boxcol}{rgb}{0.3,0.8,0.1}
+
+% see documentation for a0poster class for the size options here
+\let\Textsize\normalsize
+\def\Head#1{\noindent\hbox to \hsize{\hfil{\LARGE\color{DarkBlue}\sf #1}}\bigskip}
+\def\LHead#1{\noindent{\LARGE\color{DarkBlue}\sf #1}\bigskip}
+\def\Subhead#1{\noindent{\large\color{DarkBlue}\sf #1}\bigskip}
+\def\Title#1{\noindent{\VeryHuge\color{Red}\bf\sf #1}}
+\usepackage[absolute]{textpos}
+\makeatletter							%Needed to include code in main file
+\renewcommand\@maketitle{%
+\null									%Sets position marker
+{
+\color{headingcol}\sffamily\VERYHuge		%Set title font and colour
+\@title \par}%
+\vskip 0.6em%
+{
+\color{white}\sffamily\LARGE				%Set author font and colour
+\lineskip .5em%
+\begin{tabular}[t]{l}%
+\@author
+\end{tabular}\par}%
+\vskip 1cm
+\par
+}
+
+
+
+
+
+\begin{document}
+
+
+\begin{textblock}{23}(0,0)
+\vspace*{-48mm}\hspace*{-42mm}%
+\includegraphics{ucl_bar_black.eps}
+\begin{minipage}{1191mm}		%Minipage for title contents
+\vspace{-20cm}
+\maketitle
+\end{minipage}
+\end{textblock}
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
