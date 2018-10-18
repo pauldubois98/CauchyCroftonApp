@@ -10,8 +10,8 @@
 /AndroidApp/captures
 /AndroidApp/.externalNativeBuild
 
-/AndroidApp/keys/*
+AndroidApp/keys/*
 
-/PythonApp/__pycache__
+PythonApp/__pycache__
 
 
