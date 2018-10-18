@@ -513,6 +513,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.math_paper:
+                        //https://github.com/pauldubois98/CauchyCroftonProject/tree/master/AndroidApp/media
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/project/paper/Cauchy-Crofton_Formula.pdf")));
                         return true;
                     case R.id.maths_expl:
