@@ -1,16 +1,16 @@
-*.iml
-/AndroidApp/.gradle
-/AndroidApp/local.properties
-/AndroidApp/.idea/caches/build_file_checksums.ser
-/AndroidApp/.idea/libraries
-/AndroidApp/.idea/modules.xml
-/AndroidApp/.idea/workspace.xml
-/AndroidApp/.DS_Store
-/AndroidApp/build
-/AndroidApp/captures
-/AndroidApp/.externalNativeBuild
+AndroidApp/*.iml
+AndroidApp/.gradle
+AndroidApp/local.properties
+AndroidApp/.idea/caches/build_file_checksums.ser
+AndroidApp/.idea/libraries
+AndroidApp/.idea/modules.xml
+AndroidApp/.idea/workspace.xml
+AndroidApp/.DS_Store
+AndroidApp/build
+AndroidApp/captures
+AndroidApp/.externalNativeBuild
 
-AndroidApp/keys/*
+AndroidApp/keys/
 
 PythonApp/__pycache__/
 
