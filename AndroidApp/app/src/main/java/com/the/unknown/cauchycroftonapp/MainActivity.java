@@ -513,17 +513,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.math_paper:
-                        //https://github.com/pauldubois98/CauchyCroftonProject/tree/master/AndroidApp/media
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/project/paper/Cauchy-Crofton_Formula.pdf")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonProject/AndroidApp/media/paper.pdf")));
                         return true;
                     case R.id.maths_expl:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonApp/website/quick_expl.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonProject/AndroidApp/media/quick_expl.html")));
                         return true;
                     case R.id.app_expl:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/pauldubois98/CauchyCroftonApp/raw/master/media/expl.pdf")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonProject/AndroidApp/media/expl.pdf")));
                         return true;
                     case R.id.about_me:
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonApp/website/about.html")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://pauldubois98.github.io/CauchyCroftonProject/AndroidApp/media/about.html")));
                         return true;
                     default:
                         return true;
