@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            storeFile file('D:/pauld/__Programmation__/AppMobiles/CauchyCroftonApp/keys/android2.jks')
+            storeFile file('D:/pauld/__Programmation__/_Projets_/CauchyCrofton/AndroidApp/keys/android2.jks')
             keyAlias 'key0'
             keyPassword 'Cauchy2018'
             storePassword 'Cauchy2018'
@@ -14,7 +14,7 @@ android {
         applicationId "com.the.unknown.cauchycroftonapp"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 4
+        versionCode 5
         versionName '1.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.config
