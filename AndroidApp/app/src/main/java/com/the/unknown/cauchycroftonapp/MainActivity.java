@@ -13,6 +13,7 @@ import android.os.Handler;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -207,6 +208,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void drawDots(){
+        Log.d("size", "width: "+String.valueOf(mBmpWidth)+" height:"+String.valueOf(mBmpHeight));
         mDots = Bitmap.createBitmap(mBmpWidth, mBmpHeight, Bitmap.Config.ARGB_8888);
         mDotsCanvas = new Canvas(mDots);
         Paint paint = new Paint();
@@ -266,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
             return dist;
         }
         else {
-            return mBmpHeight+mBmpWidth;
+            return mBmpHeight*mBmpHeight+mBmpWidth*mBmpWidth;
         }
     }
     private void calcDots(){
@@ -277,13 +279,12 @@ public class MainActivity extends AppCompatActivity {
             int[] lines = new int[mBmpWidth*mBmpHeight];
             mCurve.getPixels(curve, 0, mBmpWidth, 0, 0, mBmpWidth, mBmpHeight);
             mLines.getPixels(lines, 0, mBmpWidth, 0, 0, mBmpWidth, mBmpHeight);
-
+            
             for(int i=0; i<mBmpWidth; i++){
                 for(int j=0; j<mBmpHeight; j++){
-                    if( (curve[i*mBmpWidth+j] == CURVE_COLOR) && (lines[i*mBmpWidth+j] == LINES_COLOR)
-                            && (minDist(j,i) > mBmpWidth*mBmpWidth/11000)
-                            && (j<mBmpWidth) && (i<mBmpHeight) && (j>0) && (i>0)){
-                        mDotsList.add(new Point(j,i));
+                    if( (curve[i+j*mBmpWidth] == CURVE_COLOR) && (lines[i+j*mBmpWidth] == LINES_COLOR)
+                            && (minDist(i,j) > mBmpWidth*mBmpWidth/11000)){
+                        mDotsList.add(new Point(i,j));
                     }
                 }
             }
@@ -843,6 +844,7 @@ public class MainActivity extends AppCompatActivity {
                         if (motionEvent.getActionMasked() == MotionEvent.ACTION_UP) {
                             int x = (int) motionEvent.getX() * mBmpWidth / mImageView.getWidth();
                             int y = (int) motionEvent.getY() * mBmpHeight / mImageView.getHeight();
+                            Log.d("add", "x: "+x+"y: "+y);
                             addDot(x, y);
                             drawAll();
                         }
